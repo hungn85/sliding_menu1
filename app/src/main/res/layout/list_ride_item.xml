@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_top"  >
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ride_item_thumbnail"
+                android:src="@drawable/ic_position_start"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ride_item_text"
+                android:layout_toRightOf="@+id/ride_item_thumbnail"
+                android:layout_margin="20dp"
+                android:text="TEST TITLE"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ride_item_btn"
+
+                android:text="ĐẶT XE"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
